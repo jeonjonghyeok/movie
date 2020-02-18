@@ -1,6 +1,7 @@
 package com.tistory.pentode;
 
 import java.text.DateFormat;
+
 import java.util.Date;
 import java.util.Locale;
 
@@ -51,12 +52,25 @@ public class HomeController {
 		
 		return "index";
 	}
-	
+	@RequestMapping(value = "/ticketing.do", method = RequestMethod.GET)
+	public String ticketing(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		return "ticketing";
+	}
+	@RequestMapping(value = "/ticketing.do", method = RequestMethod.POST)
+	  public String ticketingPOST(MemberVO member, RedirectAttributes rttr) throws Exception {
+		logger.info("regist post ...........");
+		logger.info(member.toString());
+				rttr.addFlashAttribute("msg", "SUCCESS");
+	    return "redirect:/ticketing.do";
+	  }
 	@RequestMapping(value = "/login.do", method = RequestMethod.GET)
 	public String login(Model model) throws Exception {
 	    logger.info("");
 	    return "loginForm";
 	}
+	
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
 	  public String loginPOST(MemberVO member, RedirectAttributes rttr) throws Exception {
 		UserVO user= new UserVO(member.getCACT(),member.getCNAME());

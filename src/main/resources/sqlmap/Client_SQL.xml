@@ -15,7 +15,7 @@
 		 CACT = #{id}
 		 ]]>
 	</select>
-
+	
 <!--	<select id="listPage" resultType="BoardVO">
   <![CDATA[
  select 

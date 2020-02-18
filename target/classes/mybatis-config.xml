@@ -13,7 +13,8 @@
 	
 	<typeAliases>
 		<typeAlias alias="MemberVO" type="com.tistory.pentode.vo.MemberVO"/>
+		<typeAlias alias="UserVO" type="com.tistory.pentode.vo.UserVO"/>
 	</typeAliases>
-	
+
 </configuration>
 
