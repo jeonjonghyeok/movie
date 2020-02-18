@@ -229,7 +229,7 @@
 
 <!-- ****** Categories Area Start ****** -->
 <section class="categories_area clearfix" id="about">
-	<div class="container">
+	<div class="container" id="location">
 		<div class="row">
 			<div class="col-12 col-md-6 col-lg-4">
 				<div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
