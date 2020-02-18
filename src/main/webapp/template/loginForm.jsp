@@ -125,7 +125,7 @@
     <!-- /.social-auth-links -->
 
     <a href="#" color="orange">I forgot my password</a><br>
-    <a href="join.do" class="text-center">신규 가입</a>
+    <a href="join.do" class="text-center">회원 가입</a>
 
   </div>
   </div>
