@@ -66,13 +66,13 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping(value = "/snack.do", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/snack.do", method = RequestMethod.GET)
 	public String snack(Locale locale, Model model) throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		
 		return "snack";
-	}
+	}*/
 	
 	@RequestMapping(value = "/ticketing.do", method = RequestMethod.GET)
 	public String ticketing(Locale locale, Model model) throws Exception {
@@ -140,5 +140,12 @@ public class HomeController {
 	    logger.info("");
 	    return "joinForm";
 	}
+	@RequestMapping(value = "/join.do", method = RequestMethod.POST)
+	  public String joinPOST(MemberVO member,RedirectAttributes rttr) throws Exception {
+		logger.info("regist post ...........");
+		
+//		rttr.addFlashAttribute("");
+	    return "redirect:/login.do";
+	  }
 	
 }
