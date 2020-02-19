@@ -1,20 +1,17 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-맵핑될 DAO 인터페이스의 Full name 을 줍니다.
-<mapper namespace="com.tistory.pentode.service.dao.MemberDAO">
+<!-- 맵핑될 DAO 인터페이스의 Full name 을 줍니다. -->
+<mapper namespace="com.tistory.pentode.service.dao.MovieDAO">
 
 
-	<select id="selectById" resultType="MemberVO">
+	<select id="selectMovieList" resultType="MovieVO">
 		<![CDATA[
 		select
-		 CACT, CNAME,  CSSN,  CCTN,  CMAIL, CPWD
+		 MNAME, MGRADE
 		from 
-		 CLIENT 
-		where
-		 CACT = #{id}
+		 MOVIE
 		 ]]>
 	</select>
 
 </mapper>
- -->

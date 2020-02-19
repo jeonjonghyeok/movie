@@ -14,6 +14,8 @@
 	<typeAliases>
 		<typeAlias alias="MemberVO" type="com.tistory.pentode.vo.MemberVO"/>
 		<typeAlias alias="UserVO" type="com.tistory.pentode.vo.UserVO"/>
+		<typeAlias alias="MovieVO" type="com.tistory.pentode.vo.MovieVO"/>
+		<typeAlias alias="TheaterVO" type="com.tistory.pentode.vo.TheaterVO"/>
 	</typeAliases>
 
 </configuration>

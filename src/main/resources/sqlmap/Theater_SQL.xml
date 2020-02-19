@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tistory.pentode.service.dao.TheaterDAO">
+
+
+	<!-- <select id="selectTheaterLoc" resultType="TheaterVO">
+		<![CDATA[
+		select
+		 TLOC,TBUL,TTYPE 
+		from 
+		 THEATER
+		group by
+		 TLOC
+		 
+		 ]]>
+	</select> -->
+	
+	<select id="selectTheaterBul" resultType="TheaterVO">
+		<![CDATA[
+		select
+		 TLOC, TBUL, TTYPE 
+		from 
+		 THEATER
+		where
+		 TLOC=#{location}
+		 ]]>
+	</select>
+	
+
+</mapper>

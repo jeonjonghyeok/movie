@@ -52,9 +52,20 @@
 									<h2 class="post-headline">Boil The Kettle And Make A Cup
 										Of Tea Folks, This Is Going To Be A Big One!</h2>
 								</a>
-								<p>Tiusmod tempor incididunt ut labore et dolore magna
-									aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-									ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p>
+								<p><c:forEach var="movie" items="${movies}">
+									${movie.MNAME}
+									</c:forEach>
+									<c:forEach var="theater" items="${theaters}">
+									서울 안양 안산 대전 부산
+									${theater.TBUL}
+									</c:forEach>
+									<c:forEach var="theater" items="${theaters}">
+									${theater.TTYPE}
+									</c:forEach>
+									
+									
+									
+								</p>
 								<a href="#" class="read-more">Continue Reading..</a>
 							</div>
 						</div>
