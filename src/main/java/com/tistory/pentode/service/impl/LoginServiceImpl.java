@@ -21,9 +21,16 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public void insertByID(MemberVO MemberVO) throws Exception {
+	public void insertByID(MemberVO user) throws Exception {
+//		String CACT = user.getCACT();
+//		String CNAME = user.getCNAME();
+//		String CSSN = user.getCSSN();
+//		String CCTN = user.getCCTN();
+//		String CMAIL = user.getCMAIL();
+//		String CPWD = user.getCPWD();
 		
-		memberMapper.insertClient(MemberVO);
+		
+		memberMapper.insertClient(user);
 	}
 
 }

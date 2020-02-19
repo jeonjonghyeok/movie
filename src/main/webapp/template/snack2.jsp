@@ -6,7 +6,7 @@
     <!-- ****** Header Area End ****** -->
 
     <!-- ****** Breadcumb Area Start ****** -->
-    <div class="breadcumb-area" style="background-image: url(${pageContext.request.contextPath}/template/img/blog-img/1.PNG);">
+    <div class="breadcumb-area" style="background-image: url(/resources/img/blog-img/1.PNG);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -39,8 +39,8 @@
                                 <li class="page-item">
                                     <a class="page-link" href="snack.do">CGV</a>
                                 </li>
-                                <li class="page-item active"><a class="page-link" href="snack1.do">MEGABOX<span class="sr-only">(current)</span></a></li>
-                                <li class="page-item"><a class="page-link" href="snack2.do">LOTTECINEMA</a></li>
+                                <li class="page-item active"><a class="page-link" href="snack2.do">MEGABOX<span class="sr-only">(current)</span></a></li>
+                                <li class="page-item"><a class="page-link" href="snack3.do">LOTTECINEMA</a></li>
                                 <li class="page-item">
                                    <!--  <a class="page-link" href="#">Next <i class="fa fa-angle-double-right" aria-hidden="true"></i></a> -->
                                 </li>
@@ -66,7 +66,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.1s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME1.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME1.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -109,7 +109,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME2.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME2.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -152,7 +152,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.3s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME3.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME3.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -195,7 +195,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME4.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME4.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -238,7 +238,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME5.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME5.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -281,7 +281,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME6.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME6.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -322,7 +322,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME7.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME7.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -363,7 +363,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME8.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME8.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -404,7 +404,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/ME9.jpg" alt="">
+                            <img src="/resources/img/blog-img/ME9.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -484,7 +484,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/1.jpg" alt="">
+            <img src="/resources/img/instagram-img/1.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -500,7 +500,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/2.jpg" alt="">
+            <img src="/resources/img/instagram-img/2.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -516,7 +516,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/3.jpg" alt="">
+            <img src="/resources/img/instagram-img/3.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -532,7 +532,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/4.jpg" alt="">
+            <img src="/resources/img/instagram-img/4.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -548,7 +548,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/5.jpg" alt="">
+            <img src="/resources/img/instagram-img/5.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -564,7 +564,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/6.jpg" alt="">
+            <img src="/resources/img/instagram-img/6.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -580,7 +580,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/1.jpg" alt="">
+            <img src="/resources/img/instagram-img/1.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -596,7 +596,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/2.jpg" alt="">
+            <img src="/resources/img/instagram-img/2.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">

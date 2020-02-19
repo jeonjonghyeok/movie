@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,13 +68,27 @@ public class HomeController {
 		return "index";
 	}
 	
-	/*@RequestMapping(value = "/snack.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/snack.do", method = RequestMethod.GET)
 	public String snack(Locale locale, Model model) throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		
 		return "snack";
-	}*/
+	}
+	@RequestMapping(value = "/snack2.do", method = RequestMethod.GET)
+	public String snack2(Locale locale, Model model) throws Exception {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		
+		return "snack2";
+	}
+	@RequestMapping(value = "/snack3.do", method = RequestMethod.GET)
+	public String snack3(Locale locale, Model model) throws Exception {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		
+		return "snack3";
+	}
 	
 	@RequestMapping(value = "/ticketing.do", method = RequestMethod.GET)
 	public String ticketing(Locale locale, Model model) throws Exception {
@@ -105,18 +121,20 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	  public String loginPOST(MemberVO member, RedirectAttributes rttr) throws Exception {
+	  public String loginPOST(MemberVO member, RedirectAttributes rttr, HttpServletRequest request) throws Exception {
 		UserVO user= new UserVO(member.getCACT(),member.getCNAME());
 		String id = member.getCACT();
 		System.out.println(id);
 		MemberVO memberVO = loginService.selectByID(id);
 		logger.info("regist post ...........");
 		logger.info(member.toString());
+		HttpSession session = request.getSession();
+		
 		if(member!=null) {
 			if(member.getCACT().equals(memberVO.getCACT())&&
 					member.getCPWD().equals(memberVO.getCPWD())) {
 				rttr.addFlashAttribute("msg", "SUCCESS");
-				rttr.addFlashAttribute("authUser",user);
+				session.setAttribute("authUser",user);
 				return "redirect:/index.do";
 				
 			}

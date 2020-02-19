@@ -7,7 +7,7 @@
     <!-- ****** Header Area End ****** -->
 
     <!-- ****** Breadcumb Area Start ****** -->
-    <div class="breadcumb-area" style="background-image: url(${pageContext.request.contextPath}/template/img/blog-img/1.PNG);">
+    <div class="breadcumb-area" style="background-image: url(/resources/img/blog-img/1.PNG);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
@@ -67,7 +67,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.1s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/가족.jpg" alt="">
+                            <img src="resources/img/blog-img/가족.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -110,7 +110,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.2s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/감사.jpg" alt="">
+                            <img src="/resources/img/blog-img/감사.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -153,7 +153,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.3s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/싱글.jpg" alt="">
+                            <img src="/resources/img/blog-img/싱글.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -196,7 +196,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.4s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/커플.jpg" alt="">
+                            <img src="/resources/img/blog-img/커플.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -239,7 +239,7 @@
                     <div class="single-post wow fadeInUp" data-wow-delay="0.5s">
                         <!-- Post Thumb -->
                         <div class="post-thumb">
-                            <img src="${pageContext.request.contextPath}/template/img/blog-img/콤보.jpg" alt="">
+                            <img src="/resources/img/blog-img/콤보.jpg" alt="">
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
@@ -320,7 +320,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/1.jpg" alt="">
+            <img src="/resources/img/instagram-img/1.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -336,7 +336,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/2.jpg" alt="">
+            <img src="/resources/img/instagram-img/2.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -352,7 +352,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/3.jpg" alt="">
+            <img src="/resources/img/instagram-img/3.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -368,7 +368,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/4.jpg" alt="">
+            <img src="/resources/img/instagram-img/4.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -384,7 +384,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/5.jpg" alt="">
+            <img src="/resources/img/instagram-img/5.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -400,7 +400,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/6.jpg" alt="">
+            <img src="/resources/img/instagram-img/6.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -416,7 +416,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/1.jpg" alt="">
+            <img src="/resources/img/instagram-img/1.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
@@ -432,7 +432,7 @@
         <!-- Instagram Item -->
         <div class="instagram_gallery_item">
             <!-- Instagram Thumb -->
-            <img src="${pageContext.request.contextPath}/template/img/instagram-img/2.jpg" alt="">
+            <img src="/resources/img/instagram-img/2.jpg" alt="">
             <!-- Hover -->
             <div class="hover_overlay">
                 <div class="yummy-table">
