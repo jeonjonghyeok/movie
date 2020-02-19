@@ -95,11 +95,18 @@ public class HomeController {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		List<MovieVO> movies = movieService.selectMovieList();
 //		List<String> theaters = theaterService.selectTheaterLoc();
-		List<TheaterVO> theaters = theaterService.selectTheaterBul("서울");
+		List<TheaterVO> theatersS = theaterService.selectTheaterBul("서울");
+		List<TheaterVO> theatersAs = theaterService.selectTheaterBul("안산");
+		List<TheaterVO> theatersAy = theaterService.selectTheaterBul("안양");
+		List<TheaterVO> theatersD = theaterService.selectTheaterBul("대전");
+		List<TheaterVO> theatersB = theaterService.selectTheaterBul("부산");
 		
 		model.addAttribute("movies", movies);
-//		model.addAttribute("theaters", theaters);
-		model.addAttribute("theaters",theaters);
+		model.addAttribute("theatersS", theatersS);
+		model.addAttribute("theatersAs",theatersAs);
+		model.addAttribute("theatersAy",theatersAy);
+		model.addAttribute("theatersD",theatersD);
+		model.addAttribute("theatersB",theatersB);
 		
 		return "ticketing";
 	}
