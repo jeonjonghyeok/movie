@@ -16,6 +16,25 @@
 		 ]]>
 	</select>
 	
+	<select id="insertClient" resultType="MemberVO">
+		<![CDATA[
+		insert into 
+		 client 
+		values(
+		 CLIENT_SEQ.NEXTVAL,
+		  #{CACT},
+		   #{CNAME},
+		  #{CSSN},
+		   #{CCTN},
+		    #{CMAIL},
+		     #{CPWD},
+		      0,
+		       0);
+		 ]]>
+	</select>
+	
+
+	
 <!--	<select id="listPage" resultType="BoardVO">
   <![CDATA[
  select 

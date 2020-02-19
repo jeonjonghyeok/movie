@@ -20,4 +20,10 @@ public class LoginServiceImpl implements LoginService {
 		return memberMapper.selectById(id);
 	}
 
+	@Override
+	public void insertByID(MemberVO MemberVO) throws Exception {
+		
+		memberMapper.insertClient(MemberVO);
+	}
+
 }

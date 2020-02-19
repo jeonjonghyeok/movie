@@ -142,7 +142,13 @@ public class HomeController {
 	}
 	@RequestMapping(value = "/join.do", method = RequestMethod.POST)
 	  public String joinPOST(MemberVO member,RedirectAttributes rttr) throws Exception {
+		
 		logger.info("regist post ...........");
+//		if(memberVO != null) {
+//			rttr.addFlashAttribute("error", true);
+//			return "redirect:/join.do";
+//		}
+		loginService.insertByID(member);
 		
 //		rttr.addFlashAttribute("");
 	    return "redirect:/login.do";
