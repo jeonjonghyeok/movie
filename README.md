@@ -1,4 +1,4 @@
-▶ 프로젝트명   : All in movie <br>
+<h2> ▶ 프로젝트명   : All in movie </h2>
 <br>
 ▶ 개발 환경    : 
 - OS 및 DB : Windows7, MySQL
