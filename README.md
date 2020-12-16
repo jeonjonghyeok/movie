@@ -1,4 +1,4 @@
-▶ 프로젝트명   : All in movie <p>
+▶ 프로젝트명   : All in movie <br>
 ▶ 개발 환경    : 
 - OS 및 DB : Windows7, MySQL
 - 사용 Tool : Eclipse
