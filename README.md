@@ -1,11 +1,11 @@
-<h2> ▶ 프로젝트명   : All in movie </h2>
-<br>
-▶ 개발 환경    : 
-- OS 및 DB : Windows7, MySQL
-- 사용 Tool : Eclipse
-- 프로그래밍 언어 : JAVA, Servlet, JSP
-- 웹표준 기술 : HTML, CSS, Javascript, jQuery
-- 프레임워크 : Spring, MyBatis
+<h3> ▶ 프로젝트명   : All in movie </h2>
+<ul> ▶ 개발 환경    : 
+<li>- OS 및 DB : Windows7, MySQL</li>
+  <li>- 사용 Tool : Eclipse</li>
+<li>- 프로그래밍 언어 : JAVA, Servlet, JSP</li>
+<li>- 웹표준 기술 : HTML, CSS, Javascript, jQuery</li>
+<li>- 프레임워크 : Spring, MyBatis</li>
+  </ul>
 ▶ 인    원     : 5명 <br>
 ▶ OS 및 DB     : Window 10, MySQL <br>
 ▶ 사용 언어    : JAVA <br>
