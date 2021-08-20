@@ -10,7 +10,6 @@ public class TheaterVO {
 		this.TBUL=TBUL;
 		this.TTYPE=TTYPE;
 		
-		
 	}
 
 	public String getTLOC() {

@@ -14,8 +14,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  select 
    bno, title, content, writer, regdate, viewcnt 
  from 
-   tbl_board 
- where bno = #{bno}
+   tbl_board where bno = #{bno}
  </select>
 
  <update id="update">
