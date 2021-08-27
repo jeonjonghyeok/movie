@@ -1,4 +1,4 @@
-package com.tistory.pentode.vo;
+package com.tistory.pentode.dto;
 
 
 public class UserVO {

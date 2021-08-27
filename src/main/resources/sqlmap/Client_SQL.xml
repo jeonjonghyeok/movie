@@ -4,7 +4,7 @@
 <!-- 맵핑될 DAO 인터페이스의 Full name 을 줍니다. -->
 <mapper namespace="com.tistory.pentode.service.dao.MemberDAO">
 
-
+<!-- 여기임
 	<select id="selectById" resultType="MemberVO">
 		<![CDATA[
 		select
@@ -32,7 +32,7 @@
 		       0)
 		 ]]>
 	</select>
-	
+ -->	
 
 	
 <!--	<select id="listPage" resultType="BoardVO">

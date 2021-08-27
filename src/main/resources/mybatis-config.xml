@@ -12,7 +12,7 @@
 	</settings>
 	
 	<typeAliases>
-		<package name="com.tistory.pentode.vo"/> 
+		<package name="com.tistory.pentode.dto"/> 
 		<!-- <typeAlias alias="MemberVO" type="com.tistory.pentode.vo.MemberVO"/>
 		<typeAlias alias="UserVO" type="com.tistory.pentode.vo.UserVO"/>
 		<typeAlias alias="MovieVO" type="com.tistory.pentode.vo.MovieVO"/>

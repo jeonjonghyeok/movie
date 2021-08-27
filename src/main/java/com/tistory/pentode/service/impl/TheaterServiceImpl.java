@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.tistory.pentode.dto.TheaterVO;
 import com.tistory.pentode.service.TheaterService;
 import com.tistory.pentode.service.dao.TheaterDAO;
-import com.tistory.pentode.vo.TheaterVO;
 
 @Service("theaterService")
 public class TheaterServiceImpl implements TheaterService{

@@ -2,9 +2,9 @@ package com.tistory.pentode.service.dao;
 
 import java.util.List;
 
-import com.tistory.pentode.vo.MovieVO;
+import com.tistory.pentode.dto.MovieDTO;
 
 public interface MovieDAO {
-	List<MovieVO> selectMovieList() throws Exception;
+	List<MovieDTO> selectMovieList() throws Exception;
 	
 }

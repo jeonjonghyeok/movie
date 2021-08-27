@@ -5,7 +5,7 @@
 <mapper namespace="com.tistory.pentode.service.dao.MovieDAO">
 
 
-	<select id="selectMovieList" resultType="MovieVO">
+	<!-- <select id="selectMovieList" resultType="MovieVO">
 		<![CDATA[
 		select
 		 MNAME, MGRADE
@@ -13,5 +13,5 @@
 		 MOVIE
 		 ]]>
 	</select>
-
+ -->
 </mapper>

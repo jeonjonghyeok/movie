@@ -1,6 +1,6 @@
 package com.tistory.pentode.service;
 
-import com.tistory.pentode.vo.MemberVO;
+import com.tistory.pentode.dto.MemberVO;
 
 public interface LoginService {
 

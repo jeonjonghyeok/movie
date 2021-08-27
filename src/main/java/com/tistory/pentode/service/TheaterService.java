@@ -2,7 +2,7 @@ package com.tistory.pentode.service;
 
 import java.util.List;
 
-import com.tistory.pentode.vo.TheaterVO;
+import com.tistory.pentode.dto.TheaterVO;
 
 public interface TheaterService {
 	
