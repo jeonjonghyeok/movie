@@ -3,46 +3,77 @@ package com.tistory.pentode.dto;
 import java.util.Date;
 
 public class MovieDTO {
-	private Integer movie_id;
-	private String MNAME;
-	private String description;
-	private Date movie_date;
-
-	public MovieDTO() {
-		super();
+//	private Integer movieId;
+//	private String movieName;
+//	private String description;
+//	private Date movieDate;
+	private Integer MID;
+	private String MOVIENAME;
+	private String DESCRIPTION;
+	private Date MDATE;
+	public Integer getMID() {
+		return MID;
 	}
-
-	public Integer getMovie_id() {
-		return movie_id;
+	public void setMID(Integer mID) {
+		MID = mID;
 	}
-
-	public void setMovie_id(Integer movie_id) {
-		this.movie_id = movie_id;
+	public String getMOVIENAME() {
+		return MOVIENAME;
 	}
-
-	public String getMNAME() {
-		return MNAME;
+	public void setMOVIENAME(String mOVIENAME) {
+		MOVIENAME = mOVIENAME;
 	}
-
-	public void setMNAME(String mNAME) {
-		MNAME = mNAME;
+	public String getDESCRIPTION() {
+		return DESCRIPTION;
 	}
-
-	public String getDescription() {
-		return description;
+	public void setDESCRIPTION(String dESCRIPTION) {
+		DESCRIPTION = dESCRIPTION;
 	}
-
-	public void setDescription(String description) {
-		this.description = description;
+	public Date getMDATE() {
+		return MDATE;
 	}
-
-	public Date getMovie_date() {
-		return movie_date;
+	public void setMDATE(Date mDATE) {
+		MDATE = mDATE;
 	}
+	
 
-	public void setMovie_date(Date movie_date) {
-		this.movie_date = movie_date;
-	}
+
+//	public MovieDTO() {
+//		super();
+//	}
+
+//	public Integer getMovieId() {
+//		return movieId;
+//	}
+//
+//	public void setMovieId(Integer movieId) {
+//		this.movieId = movieId;
+//	}
+//
+//	public String getMovieName() {
+//		return movieName;
+//	}
+//
+//	public void setMovieName(String movieName) {
+//		this.movieName = movieName;
+//	}
+//
+//	public String getDescription() {
+//		return description;
+//	}
+//
+//	public void setDescription(String description) {
+//		this.description = description;
+//	}
+//
+//	public Date getMovieDate() {
+//		return movieDate;
+//	}
+//
+//	public void setMovieDate(Date movieDate) {
+//		this.movieDate = movieDate;
+//	}
+
 
 	
 	

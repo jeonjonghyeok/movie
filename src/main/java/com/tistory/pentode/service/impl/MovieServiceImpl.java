@@ -13,11 +13,13 @@ import com.tistory.pentode.service.dao.MovieDAO;
 public class MovieServiceImpl implements MovieService {
 	@Autowired
 	private MovieDAO movieMapper;
-
+	
+	
+	
 	@Override
-	public List<MovieDTO> selectMovieList() throws Exception {
+	public List<MovieDTO> selectMovieId() throws Exception {
 		// TODO Auto-generated method stub
-		return movieMapper.selectMovieList();
+		return movieMapper.selectMovieId();
 	}
 
 	

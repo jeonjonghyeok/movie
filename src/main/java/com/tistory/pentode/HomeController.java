@@ -49,7 +49,8 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
-//		List<MovieDTO> movies = movieService.selectMovieList();
+		List<MovieDTO> movies = movieService.selectMovieId();
+		model.addAttribute("movies", movies);
 		Date date = new Date();
 //		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		
@@ -61,7 +62,7 @@ public class HomeController {
 	}
 	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
 	public String index(Locale locale, Model model) throws Exception {
-		List<MovieDTO> movies = movieService.selectMovieList();
+		List<MovieDTO> movies = movieService.selectMovieId();
 		logger.info("Welcome home! The client locale is {}.", locale);
 		model.addAttribute("movies", movies);
 		
@@ -93,32 +94,33 @@ public class HomeController {
 	@RequestMapping(value = "/ticketing.do", method = RequestMethod.GET)
 	public String ticketing(Locale locale, Model model) throws Exception {
 		logger.info("Welcome home! The client locale is {}.", locale);
-		List<MovieDTO> movies = movieService.selectMovieList();
+		List<MovieDTO> movies = movieService.selectMovieId();
 //		List<String> theaters = theaterService.selectTheaterLoc();
-		List<TheaterVO> theatersS = theaterService.selectTheaterBul("서울");
-		List<TheaterVO> theatersAs = theaterService.selectTheaterBul("안산");
-		List<TheaterVO> theatersAy = theaterService.selectTheaterBul("안양");
-		List<TheaterVO> theatersD = theaterService.selectTheaterBul("대전");
-		List<TheaterVO> theatersB = theaterService.selectTheaterBul("부산");
+//		List<TheaterVO> theatersS = theaterService.selectTheaterBul("서울");
+//		List<TheaterVO> theatersAs = theaterService.selectTheaterBul("안산");
+//		List<TheaterVO> theatersAy = theaterService.selectTheaterBul("안양");
+//		List<TheaterVO> theatersD = theaterService.selectTheaterBul("대전");
+//		List<TheaterVO> theatersB = theaterService.selectTheaterBul("부산");
 		
 		model.addAttribute("movies", movies);
-		model.addAttribute("theatersS", theatersS);
-		model.addAttribute("theatersAs",theatersAs);
-		model.addAttribute("theatersAy",theatersAy);
-		model.addAttribute("theatersD",theatersD);
-		model.addAttribute("theatersB",theatersB);
+//		model.addAttribute("theatersS", theatersS);
+//		model.addAttribute("theatersAs",theatersAs);
+//		model.addAttribute("theatersAy",theatersAy);
+//		model.addAttribute("theatersD",theatersD);
+//		model.addAttribute("theatersB",theatersB);
 		
 		return "ticketing";
 	}
 	@RequestMapping(value = "/ticketing.do", method = RequestMethod.POST)
 	  public String ticketingPOST(MemberVO member, RedirectAttributes rttr) throws Exception {
-		List<MovieDTO> movies = movieService.selectMovieList();
-		List<String> theaters = theaterService.selectTheaterLoc();
+		List<MovieDTO> movies = movieService.selectMovieId();
+//		model.addAttribute("movies,movies");
+//		List<String> theaters = theaterService.selectTheaterLoc();
 		logger.info("regist post ...........");
 		logger.info(member.toString());
 				rttr.addFlashAttribute("msg", "SUCCESS");
 				rttr.addFlashAttribute("movies", movies);
-				rttr.addFlashAttribute("theaters", theaters);
+//				rttr.addFlashAttribute("theaters", theaters);
 	    return "redirect:/ticketing.do";
 	  }
 	@RequestMapping(value = "/login.do", method = RequestMethod.GET)

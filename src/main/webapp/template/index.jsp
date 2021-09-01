@@ -9,26 +9,40 @@
 <section class="welcome-post-sliders owl-carousel">
 	<!-- Single Slide -->
 	<!-- Post Thumb -->
-	<c:forEach var="movie" items="${movies}">
+	<%-- <c:forEach var="movie" items="${movies}">
 		<div class="welcome-single-slide">
-			<img src="/resources/img/movie-img/${movie.MNAME}.jpg" alt="">
+			<img src="/resources/img/movie-img/${movie.movieName}.jpg" alt="">
 			<!-- Overlay Text -->
 			<div class="project_title">
 				<div class="post-date-commnents d-flex">
 					<a href="#">2020.01.22</a> <a href="#">${movie.MGRADE}세 관람가</a>
 				</div>
-				<a href="ticketing.do">
-					<h5>${movie.MNAME}</h5>
+				<a href="ticketing.do">]
+					<h5>${movie.MOVIENAME}</h5>
+					<h5>${movie.DESCRIPTION}</h5>
 				</a>
 			</div>
 		</div>
 
-	</c:forEach>
+	</c:forEach> --%>
+	<div class="welcome-single-slide">
+			<%-- <img src="/resources/img/movie-img/${movie.movieName}.jpg" alt=""> --%>
+			<!-- Overlay Text -->
+			<div class="project_title">
+				<div class="post-date-commnents d-flex">
+					<%-- <a href="#">2020.01.22</a> <a href="#">${movie.MGRADE}세 관람가</a> --%>
+				</div>
+				<a href="ticketing.do">
+					<h5>hello</h5>
+				</a>
+			</div>
+		</div>
 </section> 
 <!-- ****** Categories Area End ****** -->
 
 <!-- ****** Blog Area Start ****** -->
 <section class="blog_area section_padding_0_80">
+	
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-lg-8">
@@ -36,6 +50,24 @@
 
 					<!-- Single Post -->
 					<div class="col-12">
+					<div>
+					<c:forEach var="movie" items="${movies}">
+						<div class="welcome-single-slide">
+							<%-- <img src="/resources/img/movie-img/${movie.movieName}.jpg" alt=""> --%>
+							<!-- Overlay Text -->
+							<div class="project_title">
+								<div class="post-date-commnents d-flex">
+									<%-- <a href="#">2020.01.22</a> <a href="#">${movie.MGRADE}세 관람가</a> --%>
+								</div>
+								<a href="ticketing.do">]
+									<h5>${movie.MOVIENAME}</h5>
+									<h5>${movie.DESCRIPTION}</h5>
+								</a>
+							</div>
+						</div>
+				
+					</c:forEach>
+					</div>
 						<div class="single-post wow fadeInUp" data-wow-delay=".2s">
 							<!-- Post Thumb -->
 							<div class="post-thumb">
@@ -71,8 +103,39 @@
 											<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
 										</div>
 									</div>
+									
+									
+									
 								</div>
+								
+								
+								
+								
+								
+								
 								<a href="#">
+									<%-- <c:forEach var="movie" items="${movies}">
+										<div class="welcome-single-slide">
+											<img src="/resources/img/movie-img/${movie.movieName}.jpg" alt="">
+											<!-- Overlay Text -->
+											<div class="project_title">
+												<div class="post-date-commnents d-flex">
+													<a href="#">2020.01.22</a> <a href="#">${movie.MGRADE}세 관람가</a>
+												</div>
+												<a href="ticketing.do">]
+													<h5>${movie.MOVIENAME}</h5>
+													<h5>${movie.DESCRIPTION}</h5>
+												</a>
+											</div>
+										</div>
+								
+									</c:forEach> --%>
+									<c:forEach var="movie" items="${movies}">
+											<a href="ticketing.do">
+												<h5>${movie.MOVIENAME}</h5>
+												<h5>${movie.DESCRIPTION}</h5>
+											</a>
+								</c:forEach>
 									<h2 class="post-headline">Boil The Kettle And Make A Cup
 										Of Tea Folks, This Is Going To Be A Big One!</h2>
 								</a>
