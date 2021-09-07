@@ -1,23 +1,18 @@
 import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
+import MovTest from "../components/MovTest";
 import "./Home.css";
 
-class Home extends React.Component {
+class Test extends React.Component {
   state = {
     isLoading: true,
     movie: [],
   };
   getMovies = async () => {
-    const {
-      data: {
-        data: { movies },
-      },
-    } = await axios.get(
-      // "http://localhost:8080/api"
-      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
-    );
-    console.log(movies);
+    const tmp = await axios.get("http://localhost:8080/api");
+    const movies = tmp.data;
+    console.log(tmp.data);
     this.setState({ movies, isLoading: false });
   };
   componentDidMount() {
@@ -26,6 +21,7 @@ class Home extends React.Component {
 
   render() {
     const { isLoading, movies } = this.state;
+    // console.log({ movies });
     return (
       <section className="container">
         {isLoading ? (
@@ -35,13 +31,10 @@ class Home extends React.Component {
         ) : (
           <div className="movies">
             {movies.map((movie) => (
-              <Movie
-                key={movie.id}
+              <MovTest
                 id={movie.id}
-                year={movie.year}
-                title={movie.title}
-                summary={movie.summary}
-                poster={movie.medium_cover_image}
+                movieName={movie.movieName}
+                description={movie.description}
               />
             ))}
           </div>
@@ -51,4 +44,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default Test;
