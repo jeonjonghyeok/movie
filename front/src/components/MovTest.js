@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Proptypes from "prop-types";
 import "./Movie.css";
 
-function MovTest({ id, movieName, description }) {
+function MovTest({ id, image, movieName, description }) {
   return (
     <Link
       to={{
@@ -11,13 +11,15 @@ function MovTest({ id, movieName, description }) {
         state: {
           movieName,
           description,
+          image,
         },
       }}
     >
       <div className="movie">
+        <img src={"img/" + image + ".jpg"} alt={movieName} title={movieName} />
         <div className="movie__data">
           <h3 className="movie__title">{movieName}</h3>
-          <p className="movie__summary">{description}...</p>
+          <p className="movie__summary">{description.slice(0, 180)}...</p>
         </div>
       </div>
     </Link>

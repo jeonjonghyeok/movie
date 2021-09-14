@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import Movie from "../components/Movie";
 import MovTest from "../components/MovTest";
 import "./Home.css";
 
@@ -32,9 +31,11 @@ class Test extends React.Component {
           <div className="movies">
             {movies.map((movie) => (
               <MovTest
-                id={movie.id}
+                id={movie.movieId}
+                image={movie.image}
                 movieName={movie.movieName}
                 description={movie.description}
+                key={movie.movieId}
               />
             ))}
           </div>
